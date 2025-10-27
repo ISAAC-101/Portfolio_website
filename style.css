@@ -27,9 +27,9 @@
 }
 .viewwork{
     border: 2px solid #14b8a6;
-    padding: 20px 20px;
+    padding: 2px 2px;
     border-radius: 20px;
-    width: 200px;
+    
     background-color: #14b8a6;
     color: white;
     font-size: 0.8em;
@@ -38,12 +38,22 @@
 .viewwork:hover{
     box-shadow:0 0 2px 2px #14b8a6;
     color: black;
+    transform: scale(0.95);
+}
+.viewwork a{
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
 }
 .intouch{
     border: 2px solid #14b8a6;
-    padding: 20px 20px;
+    padding: 2px 2px;
     border-radius: 20px;
-    width: 200px;
+   
     color: white;
     font-size: 0.8em;
     background-color: black;
@@ -51,7 +61,16 @@
 }
 .intouch:hover{
     box-shadow:0 0 2px 2px #14b8a6;
-   
+    transform: scale(0.95);
+}
+.intouch a{
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
 }
 .homepage-experience{
     display: flex;
