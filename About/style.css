@@ -1,0 +1,77 @@
+
+.normal-text{
+    color: darkgray;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 80px 0;
+}
+.me{
+    color: #14b8a6;
+}
+.about-me h3{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    border-bottom:2px solid #14b8a6;
+    padding-bottom: 5px;
+}
+.about-me{
+    text-align: center;
+
+}
+.about-hello{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tech-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techskills-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  
+}
+.tech{
+    width: 140px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+     border: 0.3px solid darkgray;
+}
+.tech:hover{
+     border: 0.5px solid #14b8a6;
+     transform: scale(1.05);
+}
+.skills-outer{
+      padding-top: 50px ;
+}
+.soft-skills{
+     width: 250px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.3s;
+     border: 0.3px solid darkgray;
+}
+.soft-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.soft-skills:hover{
+    border: 0.5px solid #14b8a6;
+     transform: scale(1.05);
+}
+.skills-outer2{
+      padding-top: 50px ;
+      border-bottom: 0.3px solid darkgray;
+}

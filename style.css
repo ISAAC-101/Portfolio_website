@@ -1,37 +1,4 @@
-body{
-    background-color: black;
-    color: white;
-    padding: 70px 40px 0 40px;
-    font-size: 1.2em;
-}
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    z-index: 1000;
-    backdrop-filter: blur(50px);
-    position: fixed;
-    top: 0;
-    left: 0;
-   }
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    padding: 10px  10px;
-}
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
-}
-.nav-links a:hover{
-    color: #14b8a6;
-    border-bottom: 2px solid #14b8a6;
-}
+
 
 .ia{
     color: #14b8a6;
@@ -47,6 +14,7 @@ nav{
 }
 .myname{
     color: #14b8a6;
+    font-size: 25px;
 }
 .normal-text{
     color: darkgray;
@@ -54,7 +22,8 @@ nav{
 }
 .home-btns{
     display: flex;
-    justify-content: space-around;
+  
+    gap: 50px;
 }
 .viewwork{
     border: 2px solid #14b8a6;
@@ -64,6 +33,11 @@ nav{
     background-color: #14b8a6;
     color: white;
     font-size: 0.8em;
+    transition: 0.3s;
+}
+.viewwork:hover{
+    box-shadow:0 0 2px 2px #14b8a6;
+    color: black;
 }
 .intouch{
     border: 2px solid #14b8a6;
@@ -73,11 +47,20 @@ nav{
     color: white;
     font-size: 0.8em;
     background-color: black;
+    transition: 0.3s;
+}
+.intouch:hover{
+    box-shadow:0 0 2px 2px #14b8a6;
+   
 }
 .homepage-experience{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: #14b8a64d;
+    border-radius: 100px;
 }
 .hero{
     display: flex;
@@ -88,6 +71,36 @@ nav{
 }
 
 .cup-img img{
-   border-radius: 10px;
-   box-shadow:0 0 10px 10px #14b8a6;
+   border-radius: 100px;
+   box-shadow:0 0 10px 10px #14b8a64d;
+}
+
+.bringtotable h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bringtotable p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cleancodes-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    border-bottom: 0.5px solid darkgray;
+}
+.cleancodes{
+    border: 0.2px solid darkgray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 340px;
+    height: 150px;
+    transition: 0.3s;
+}
+.cleancodes:hover{
+   border: 0.5px solid #14b8a6;
+   transform: scale(1.05);
 }
