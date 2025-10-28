@@ -12,20 +12,28 @@
 </head>
 <body>
     <header>
-                <nav>
-            <div><h1 class="ia">&lt;IA/&gt</h1></div>
-            <div class="nav-middle">
-                <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/About/index.html">About</a></li>
-                    <li><a href="/Portfolio/index.html">Portfolio</a></li>
-                    <li><a href="/Contact/index.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1><img src="/Assets/sun-icon.png" alt=""></h1>
-            </div>
-        </nav>
+           <nav>
+  <div><h1 class="ia">&lt;IA/&gt;</h1></div>
+
+  <div class="nav-middle">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/About/index.html">About</a></li>
+      <li><a href="/Portfolio/index.html">Portfolio</a></li>
+      <li><a href="/Contact/index.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <h1><img src="/Assets/sun-icon.png" alt="theme toggle"></h1>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
     </header>
     <main>
         <div>
@@ -73,5 +81,15 @@
         </div>
         <div><h3 class="copyright">© 2025 Isaac Abaaya. All rights reserved.</h3></div>
     </footer>
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMiddle = document.querySelector('.nav-middle');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMiddle.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

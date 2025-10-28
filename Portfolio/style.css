@@ -73,7 +73,8 @@
     transition: 0.3s;
 }
 .live-demo-btn:hover{
-    box-shadow:0 0 2px 2px #14b8a6;
+  
+    transform: scale(0.95);
 }
 .live-demo-btn a{
     text-decoration: none;

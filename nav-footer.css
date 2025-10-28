@@ -16,7 +16,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-   }
+    }
 .nav-links{
     display: flex;
     list-style: none;
@@ -47,6 +47,7 @@ nav{
 }
 .quicklinks{
     list-style: none;
+    padding: 0;
 }
 
 .quicklinks a{
@@ -68,4 +69,116 @@ nav{
 .copyright{
     color: darkgray;
     font-size: 10px;
+    text-align: center;
+}
+/* --- Mobile Nav Styles --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* Hide nav links on mobile by default */
+@media (max-width: 768px) {
+  .nav-middle {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: 0.3s ease-in-out;
+  }
+ 
+
+  .nav-middle.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1.1em;
+  }
+}
+
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+@media (max-width: 768px) {
+    /* 1. Main container: Stack children vertically */
+    .footcont {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally in the column */
+        text-align: center; /* Center text within each block */
+        gap: 40px; /* Add space between stacked sections */
+        padding-top: 30px; /* Smaller padding for mobile */
+        padding-bottom: 30px; /* Smaller padding for mobile */
+    }
+
+    /* 2. Logo/Intro Section: Center the text */
+    .footcont > div:first-child p {
+        text-align: center;
+    }
+
+    /* 3. Quick Links: Change to a row and center */
+    .quicklinks {
+        display: flex; /* Apply flexbox to the list */
+        flex-direction: row; /* Arrange list items in a row */
+        justify-content: center; /* Center the links in the row */
+        gap: 15px; /* Add space between the links */
+    }
+
+    /* Adjust the text within quick links to align with the row layout */
+    .quicklinks p {
+        text-align: center; /* Center the text */
+        margin: 0; /* Remove default margin for tighter row layout */
+    }
+    
+    /* 4. Social Media: Center the icons */
+    .social-media {
+        justify-content: center;
+    }
+
+    /* 5. Headings: Center the headings */
+    .footcont h3 {
+        text-align: center;
+        margin-top: 0; /* Remove top margin that might push things down */
+        margin-bottom: 10px; /* Add a bit of space after the heading */
+    }
 }

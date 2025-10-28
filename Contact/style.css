@@ -1,0 +1,140 @@
+.normal-text{
+    color: darkgray;
+   
+}
+
+.me{
+    color: #14b8a6;
+}
+.about-me h3{
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    border-bottom:2px solid #14b8a6;
+    padding-bottom: 5px;
+}
+.about-me{
+    text-align: center;
+}
+
+.Contact-text p{
+     display: block;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
+.Contact-text{
+   text-align: center;
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid darkgray;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.contact-box:hover{
+    border: 1px solid #14b8a6;
+}
+.contact-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.contact-info{
+    line-height: 1.4;
+}
+.contact-info span{
+    display: block;
+}
+.label-head{
+    color: #aaa;
+    font-size: 14px;
+}
+.value-sub{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+.value-sub a{
+    text-decoration: none;
+    color: white;
+}
+.socials{
+    margin-top: 25px;
+
+}
+.socials a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: inline-block;
+   
+}
+.socials a:hover{
+     border: 1px solid #14b8a6;
+}
+.contact-form{
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 0.5px solid darkgray;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+input,textarea{
+      background-color: #11131a;
+  border: 1px solid #2c2f38;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 14px;
+
+}
+
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+button {
+    background-color: #00c896;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00c8964d;
+}
+.information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
+    padding: 50px 0;
+}

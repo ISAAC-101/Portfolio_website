@@ -12,22 +12,73 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div><h1 class="ia">&lt;IA/&gt</h1></div>
-            <div class="nav-middle">
-                <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/About/index.html">About</a></li>
-                    <li><a href="/Portfolio/index.html">Portfolio</a></li>
-                    <li><a href="/Contact/index.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1><img src="/Assets/sun-icon.png" alt=""></h1>
-            </div>
-        </nav>
+       <nav>
+  <div><h1 class="ia">&lt;IA/&gt;</h1></div>
+
+  <div class="nav-middle">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/About/index.html">About</a></li>
+      <li><a href="/Portfolio/index.html">Portfolio</a></li>
+      <li><a href="/Contact/index.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-right">
+    <h1><img src="/Assets/sun-icon.png" alt="theme toggle"></h1>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
     </header>
-    <main></main>
+    <main>
+        <div class="about-me"><h3>Get In <span class="me">Touch</span></h3></div>
+            <div class="Contact-text"> <p class="normal-text">I'm always open to new opportunities and collaborations. Feel free to reach out!</p></div>
+        </div>
+        <section class="information">
+            <div>
+                <h3>Lets Connect</h3>
+                <p class="normal-text">Whether you have a question, want to discuss a project, or just want to <br> say hi, I'll try my best to get back to you!</p>
+                <div class="contact-box">
+                    <div class="contact-icon"><img src="/Assets/mail.png" alt=""></div>
+                    <div class="contact-info">
+                        <span class="label-head"><p class="normal-text">Email</p></span>
+                        <span class="value-sub"><a href="mailto:abaayaisaac@gmail.com">abaayaisaac@gmail.com</a></span>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon"><img src="/Assets/mail.png" alt=""></div>
+                    <div class="contact-info">
+                        <span class="label-head"><p class="normal-text">Phone</p></span>
+                        <span class="value-sub"><a href="tel:+233206146876">+(233) 20 614 6876</a></span>
+                    </div>
+                </div>
+                <div><h4>Follow Me</h4></div>
+                <div class="socials">
+                    <a href="#">AAA</a>
+                    <a href="#">BBB</a>
+                    <a href="#">CCC</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="your message ..."></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footcont">
         <div><h1 class="ia">&lt;IA/&gt</h1>
@@ -50,6 +101,15 @@
         </div>
         <div><h3 class="copyright">© 2025 Isaac Abaaya. All rights reserved.</h3></div>
     </footer>
+     <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMiddle = document.querySelector('.nav-middle');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMiddle.classList.toggle('active');
+  });
+</script>
 </body>
 <script type="module" src="./script.js"></script>
 </html>
